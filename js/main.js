@@ -1,4 +1,9 @@
-
+// close sub box srcipt
+var btnCloseSubBox = document.querySelector('.sub__close-btn i');
+var subBox = document.querySelector('.sub__wrap');
+btnCloseSubBox.onclick = function(){
+    subBox.classList.add('close');
+}
 // cursor script
 const cursor = document.querySelector('.cursor');
 document.addEventListener('mousemove', function(e){
