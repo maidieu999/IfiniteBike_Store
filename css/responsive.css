@@ -469,14 +469,14 @@
     }
     /* categories section */
     button.owl-prev {
-        bottom: 0;
+        bottom: -16px;
         top:initial;
-        left: 45%;
+        left: 48%;
     }
     button.owl-next {
-        bottom: 0;
+        bottom: -14px;
         top:initial;
-        right: 45%;
+        right: 41%;
     }
     /* best seller */
     .bestseller__left{
@@ -762,6 +762,7 @@
     }
     .ads__title{
         width: 100%;
+        line-height: 2rem;
     }
 
     .connect{
