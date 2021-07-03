@@ -187,7 +187,26 @@ ul{
 .cta i{
     font-size: 20px;
 }
-
+.text-gradient {
+    background: -moz-linear-gradient(left, #fc2a40, #ff5606);
+    background: -webkit-linear-gradient(left, #fc2a40, #ff5606);
+    background: linear-gradient(to right, #fc2a40, #ff5606);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.section__title{
+    transition: all .3s ease;
+}
+.section__title:hover{
+    color: var(--highligh-color);
+    background: -moz-linear-gradient(left, #fc2a40, #ff5606);
+    background: -webkit-linear-gradient(left, #fc2a40, #ff5606);
+    background: linear-gradient(to right, #fc2a40, #ff5606);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 form, .form-control, .form-control:focus {
     color: rgba(255, 255, 255, 0.829);
 }
@@ -220,6 +239,70 @@ input:-internal-autofill-selected{
     width: 100%;
     height: 100%;
 }
+/* subscrible layout */
+.sub__wrap{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    transition: all .3s ease;
+}
+.sub__wrap.close{
+    opacity: 0;
+    visibility: hidden;
+}
+.sub__box{
+    width: 650px;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background: var(--bg-color2);
+}
+.sub__close-btn{
+    color: var(--text-color2);
+    font-size: 25px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.sub__box-left{
+    width: 54%;
+    height: 100%;
+    background-image: url("../images/about/bg-count.jpg");
+    background-position: left center;
+    background-size: cover;
+}
+.sub__box-left.shop__sub-left {
+    background-image: url(../images/best_seller/bestseller2.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 66%;
+    z-index: 1;
+    background-position-x: -60px;
+}
+.sub__box-left img{
+    width: 100%;
+    height: 100%;
+
+}
+.sub__box-right{width: 100%;height: 100%;padding: 1rem;display: flex;}
+.sub__box-right.shop__sub-right {
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.sub__box-right .subscrible__block input{
+    width: 90%;
+}
 /* header styling */
 .header{
     font-style: initial;
@@ -227,6 +310,7 @@ input:-internal-autofill-selected{
     position: absolute;
     width: 100%;
     z-index: 99;
+    overflow: hidden;
 }
 .header__wrap{
     font-style: initial;
@@ -861,7 +945,7 @@ a.useful__item:hover, useful__item:hover span {
     color: #fff!important;
 }
 .subscrible__block{
-    font-style: initial;
+    margin: auto;
 }
 
 .subscrible__block input {
