@@ -197,7 +197,7 @@
     /* new arrivals */
     .item__image {
         width: 95%;
-        height: 182px;
+        height: auto;
         margin: auto;
     }
 
@@ -359,6 +359,29 @@
 
 }
 @media (max-width: 767px){
+    /* subscrible box layout */
+    .sub__box{
+        width: 90%;
+        height: auto;
+        margin: auto;
+        text-align: center;
+    }
+    .sub__box p{
+    }
+    .sub__box-left{
+        display: none;
+    }
+    .sub__box-right{
+        width: 100%;
+        background-image: url("../images/about/bg-count.jpg");
+        background-size: cover;
+        padding: 3rem .5rem;
+    }
+    .sub__box-right.shop__sub-right {
+        width: 100%;
+        position: initial;
+        margin: auto;
+    }
     /* header section */
     .header__logo img,
     .header__wrap.fixed .header__logo img {
@@ -382,7 +405,7 @@
     }
     .item__image {
         width: 100%;
-        height: 214px;
+        height: auto;
     }
     /* home page */
     .slide_title-and-text h1{
@@ -415,14 +438,6 @@
         bottom: 213px;
         right: 0;
     }
-    /* .slide__spe {
-        width: 500px;
-        position: absolute;
-        bottom: 0px;
-        z-index: 7;
-        margin: auto;
-        left: calc(50% - 250px);
-    } */
     .slide__spe {
         width: 100%;
         justify-content: space-around;
@@ -452,7 +467,17 @@
         width: 200px;
         left: calc(50% - 100px);
     }
-
+    /* categories section */
+    button.owl-prev {
+        bottom: 0;
+        top:initial;
+        left: 45%;
+    }
+    button.owl-next {
+        bottom: 0;
+        top:initial;
+        right: 45%;
+    }
     /* best seller */
     .bestseller__left{
         position: inherit;

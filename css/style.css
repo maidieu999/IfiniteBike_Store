@@ -252,8 +252,7 @@ input:-internal-autofill-selected{
     transition: all .3s ease;
 }
 .sub__wrap.close{
-    opacity: 0;
-    visibility: hidden;
+    display: none;
 }
 .sub__box{
     width: 650px;
@@ -273,7 +272,7 @@ input:-internal-autofill-selected{
     right: 10px;
 }
 .sub__box-left{
-    width: 54%;
+    width: 40%;
     height: 100%;
     background-image: url("../images/about/bg-count.jpg");
     background-position: left center;
@@ -284,18 +283,18 @@ input:-internal-autofill-selected{
     position: absolute;
     top: 0;
     left: 0;
-    width: 40%;
-    z-index: 1;
-    background-position-x: -60px;
+    width: 49%;
+    z-index: 7;
+    background-position-x: -63px;
 }
 .sub__box-left img{
     width: 100%;
     height: 100%;
 
 }
-.sub__box-right{width: 100%;height: 100%;padding: 1rem;display: flex;}
+.sub__box-right{width: 60%;height: 100%;padding: 1rem;display: flex;}
 .sub__box-right.shop__sub-right {
-    width: 60%;
+    width: 55%;
     position: absolute;
     top: 0;
     right: 0;
@@ -558,7 +557,7 @@ h2.section__title.choose__title {
 .cate__card{
     width: 350px;
     height: 500px;
-    margin: 0 10px;
+    margin: auto;
 }
 .cate__card img{
     width: 350px;
