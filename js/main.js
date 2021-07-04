@@ -1,9 +1,5 @@
-// close sub box srcipt
-var btnCloseSubBox = document.querySelector('.sub__close-btn i');
-var subBox = document.querySelector('.sub__wrap');
-btnCloseSubBox.onclick = function(){
-    subBox.classList.add('close');
-}
+console.log('ok');
+
 // cursor script
 const cursor = document.querySelector('.cursor');
 document.addEventListener('mousemove', function(e){
@@ -47,8 +43,6 @@ document.addEventListener("DOMContentLoaded", function(){
     }
     for (const key in menuItem) {
         const element = menuItem[key];
-        console.log(element);
-
         element.onclick = function() {
             hamburger.classList.toggle('active');
             menu.classList.toggle('active');
@@ -63,10 +57,8 @@ document.addEventListener("DOMContentLoaded", function(){
 //navigation fixed script
 const navPane1 = document.querySelector('.header__wrap');
 window.addEventListener('scroll',function(){
-    console.log('ok');
     if(window.pageYOffset > 100){
         navPane1.classList.add('fixed');
-        console.log('qua 200');
     }
     else{
         navPane1.classList.remove('fixed');
@@ -80,3 +72,5 @@ setTimeout(() => {
     cursor.classList.remove('active')
 
 },10000);
+
+
